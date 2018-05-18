@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react'
+import {Anchor} from 'react-pipestyle'
 
 type Props = {
   children: React.Node,
@@ -8,13 +9,19 @@ type Props = {
 const Layout = (props: Props) => {
   return (
     <div>
-      <nav className="nav-wrapper light-blue">
-        <header className="container">
-          <a href="#" className="brand-logo">
-            Scrum App
-          </a>>
-        </header>
-      </nav>
+      <header className="pp-header">
+        <div className="pp-top-header">
+          <div className="pp-left-side">
+            <Anchor
+              className="pp-org-name pp-no-after"
+              title="Board App"
+              href="#"
+            >
+              Board App
+            </Anchor>
+          </div>
+        </div>
+      </header>
       <main className="container">{props.children}</main>
     </div>
   )

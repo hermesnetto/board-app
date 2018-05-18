@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="pp-theme-pipefy pp-theme-custom">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <title>Hello BoardApp!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">    
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" media="all" href="https://d3l2kwhcxt3ou6.cloudfront.net/3.9.14/assets/stylesheets/pipestyle.css" />
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>" />
   </head>
 
   <body>
